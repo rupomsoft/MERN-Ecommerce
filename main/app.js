@@ -16,6 +16,16 @@ const cors =require('cors');
 // Database Lib Import
 const mongoose =require('mongoose');
 
+let URL="mongodb+srv://<username>:<password>@cluster0.7uslu.mongodb.net/ecom4?retryWrites=true&w=majority";
+let option={user:'testuser7777',pass:"testuser7777",autoIndex:true};
+
+mongoose.connect(URL,option).then((res)=>{
+    console.log("Database Connected")
+}).catch((err)=>{
+    console.log(err)
+})
+
+
 // Security Middleware Implement
 app.use(cors())
 app.use(helmet())

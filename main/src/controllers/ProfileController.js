@@ -6,9 +6,10 @@ exports.CreateProfile=async (req,res)=>{
 }
 
 exports.ReadProfile=async (req,res)=>{
+    let email= req.headers.email
     return res.status(200).json({
         success:true,
-        message:"UserLogin"
+        message:email
     })
 }
 

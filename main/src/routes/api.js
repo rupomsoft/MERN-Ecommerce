@@ -30,11 +30,10 @@ router.get('/CreateCartList',ProductController.CreateCartList)
 router.get('/RemoveCartList',ProductController.RemoveCartList)
 
 
-
 // User
-router.get('/UserLogout',UserController.UserLogin)
+router.get('/UserLogin/:email',UserController.UserLogin)
 router.get('/UserLogout',UserController.UserLogout)
-router.get('/VerifyLogin',UserController.VerifyLogin);
+router.get('/VerifyLogin/:email/:otp',UserController.VerifyLogin);
 
 
 // Profile
