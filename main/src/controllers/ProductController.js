@@ -1,105 +1,78 @@
+const {ProductBYRemark,ProductBYCategory, ProductBYBrand,ProductBYCategoryLimit10, ProductBYSlider, ProductBYKeyword} = require("../services/ProductService");
+const {CreateWish} = require("../services/WishService");
+
 exports.SliderList=async (req,res)=>{
-    // 20
-    return res.status(200).json({
-        success:true,
-        message:"Slide List"
-    })
+    let result=await  ProductBYSlider(req)
+    return res.status(200).json(result)
 }
 
 exports.ListByCategory=async (req,res)=>{
-    return res.status(200).json({
-        success:true,
-        message:"ListByCategory List"
-    })
+    let result=await  ProductBYCategory(req)
+    return res.status(200).json(result)
 }
 
 exports.ListBySmilier=async (req,res)=>{
-    return res.status(200).json({
-        success:true,
-        message:"ListBySmilier List"
-    })
+    let result=await  ProductBYCategoryLimit10(req)
+    return res.status(200).json(result)
 }
 
 exports.ListByBrand=async (req,res)=>{
-    return res.status(200).json({
-        success:true,
-        message:"ListByBrand"
-    })
+    let result=await  ProductBYBrand(req)
+    return res.status(200).json(result)
 }
 
 exports.ListByKeyword=async (req,res)=>{
-    return res.status(200).json({
-        success:true,
-        message:"ListByKeyword"
-    })
+    let result=await  ProductBYKeyword(req)
+    return res.status(200).json(result)
 }
 
 
 exports.ListReview=async (req,res)=>{
-    return res.status(200).json({
-        success:true,
-        message:"ListReview"
-    })
+
 }
 
 
 exports.ProductDetails=async (req,res)=>{
-    return res.status(200).json({
-        success:true,
-        message:"ProductDetails"
-    })
+
 }
 
 
 exports.ListByRemark=async (req,res)=>{
-    return res.status(200).json({
-        success:true,
-        message:"ListByRemark"
-    })
+    let result=await  ProductBYRemark(req)
+    return res.status(200).json(result)
 }
+
 
 
 exports.WishList=async (req,res)=>{
-    return res.status(200).json({
-        success:true,
-        message:"WishList"
-    })
+
 }
 
 exports.CreateWishList=async (req,res)=>{
-    return res.status(200).json({
-        success:true,
-        message:"WishList"
-    })
+    let result=await CreateWish(req)
+    return res.status(200).json(result)
 }
 
 exports.RemoveWishList=async (req,res)=>{
-    return res.status(200).json({
-        success:true,
-        message:"WishList"
-    })
+
+
 }
+
+
+
+
 
 
 exports.CartList=async (req,res)=>{
-    return res.status(200).json({
-        success:true,
-        message:"CartList"
-    })
+
 }
 
 exports.CreateCartList=async (req,res)=>{
-    return res.status(200).json({
-        success:true,
-        message:"CartList"
-    })
+
 }
 
 exports.RemoveCartList=async (req,res)=>{
-    return res.status(200).json({
-        success:true,
-        message:"CartList"
-    })
+
 }
 
 

@@ -10,6 +10,8 @@ const DataSchema=mongoose.Schema({
         star:{type:String,trim:true,required:true},
         stock:{type:Boolean,trim:true,required:true,default:true},
         remark:{type:String,trim:true,required:true,enum:['new','trending','popular','top','special','regular']},
+        categoryID:{type:mongoose.Schema.Types.ObjectId,required:true},
+        brandID:{type:mongoose.Schema.Types.ObjectId,required:true},
     },
     {timestamps:true,versionKey:false}
 )

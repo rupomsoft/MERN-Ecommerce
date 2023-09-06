@@ -10,5 +10,5 @@ const DataSchema=mongoose.Schema({
     {timestamps:true,versionKey:false}
 )
 
-const ProductSliderModel=mongoose.model('productSliders',DataSchema);
+const ProductSliderModel=mongoose.model('productsliders',DataSchema);
 module.exports=ProductSliderModel;

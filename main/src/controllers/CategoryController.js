@@ -1,6 +1,5 @@
+const {AllCategories} = require("../services/ProductService");
 exports.CategoryList=async (req,res)=>{
-    return res.status(200).json({
-        success:true,
-        message:"CategoryList List"
-    })
+   let result=await AllCategories();
+   return res.status(200).json(result)
 }

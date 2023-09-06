@@ -13,15 +13,23 @@ const router=express.Router();
 router.get('/BrandList',BrandController.BrandList)
 router.get('/CategoryList',CategoryController.CategoryList)
 
+
 // Product
+router.get('/ListByCategory/:categoryID',ProductController.ListByCategory)
+router.get('/ListBySmilier/:categoryID',ProductController.ListBySmilier)
+router.get('/ListByBrand/:brandID',ProductController.ListByBrand)
+router.get('/ListByRemark/:remark',ProductController.ListByRemark)
 router.get('/SliderList',ProductController.SliderList)
-router.get('/ListByCategory',ProductController.ListByCategory)
-router.get('/ListBySmilier',ProductController.ListBySmilier)
-router.get('/ListByBrand',ProductController.ListByBrand)
-router.get('/ListByKeyword',ProductController.ListByKeyword)
+router.get('/ListByKeyword/:keyword',ProductController.ListByKeyword)
+
+
+
 router.get('/ListReview',ProductController.ListReview)
 router.get('/ProductDetails',ProductController.ProductDetails)
-router.get('/ListByRemark',ProductController.ListByRemark)
+
+
+
+
 router.get('/WishList',ProductController.WishList)
 router.get('/CreateWishList',ProductController.CreateWishList)
 router.get('/RemoveWishList',ProductController.RemoveWishList)
@@ -30,16 +38,17 @@ router.get('/CreateCartList',ProductController.CreateCartList)
 router.get('/RemoveCartList',ProductController.RemoveCartList)
 
 
+
+
 // User
 router.get('/UserLogin/:email',UserController.UserLogin)
-router.get('/UserLogout',UserController.UserLogout)
 router.get('/VerifyLogin/:email/:otp',UserController.VerifyLogin);
 
 
 // Profile
-router.get('/CreateProfile',AuthVerification,ProfileController.CreateProfile)
+router.post('/CreateProfile',AuthVerification,ProfileController.CreateProfile)
 router.get('/ReadProfile',AuthVerification,ProfileController.ReadProfile)
-router.get('/UpdateProfile',AuthVerification,ProfileController.UpdateProfile)
+router.post('/UpdateProfile',AuthVerification,ProfileController.UpdateProfile)
 
 
 // Invoice
