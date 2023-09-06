@@ -17,7 +17,6 @@ const UserOTP = async (req)=>{
     }
 }
 
-
 const UserVerify = async (req)=>{
     try{
         let email=req.params.email;
@@ -30,6 +29,7 @@ const UserVerify = async (req)=>{
             if(total===1){
                 let user_id=await UserModel.find({email: email, otp: code}).select('_id')
                 let token= EncodeToken(email,user_id[0]['_id'].toString())
+                await UserModel.updateOne({email:email}, {$set:{otp:'0'}}, {upsert:true})
                 return {status:"success", message:"Valid OTP", token:token}
             }else{
                 return {status:"fail", message:"Something Went Wrong"}
@@ -42,11 +42,12 @@ const UserVerify = async (req)=>{
 }
 
 
+
 const UserProfileSave = async (req)=>{
-    let user_id=req.headers.id;
-    let reqBody=req.body;
-    reqBody.userID = user_id;
     try{
+        let user_id=req.headers.id;
+        let reqBody=req.body;
+        reqBody.userID = user_id;
         await ProfileModel.updateOne({userID: user_id}, {$set:reqBody}, {upsert:true})
         return {status:"success", message:"Profile Save Changed"}
     }
@@ -55,9 +56,10 @@ const UserProfileSave = async (req)=>{
     }
 }
 
+
 const UserProfileDetails = async (req)=>{
-    let user_id=req.headers.id;
     try{
+        let user_id=req.headers.id;
         let data=await ProfileModel.find({userID: user_id})
         return {status:"success", data:data}
     }
@@ -65,5 +67,6 @@ const UserProfileDetails = async (req)=>{
         return {status:"fail", data:"Something Went Wrong"}
     }
 }
+
 
 module.exports = {UserOTP,UserVerify,UserProfileSave,UserProfileDetails};

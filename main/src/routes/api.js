@@ -46,9 +46,10 @@ router.get('/VerifyLogin/:email/:otp',UserController.VerifyLogin);
 
 
 // Profile
-router.post('/CreateProfile',AuthVerification,ProfileController.CreateProfile)
-router.get('/ReadProfile',AuthVerification,ProfileController.ReadProfile)
+router.post('/CreateProfile',AuthVerification,ProfileController.CreateProfile);
 router.post('/UpdateProfile',AuthVerification,ProfileController.UpdateProfile)
+router.get('/ReadProfile',AuthVerification,ProfileController.ReadProfile)
+
 
 
 // Invoice
