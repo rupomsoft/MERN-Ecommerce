@@ -1,15 +1,30 @@
 
-const WishModel = require("../models/WishModel");
 const mongoose = require("mongoose");
+const ProductModel = require("../models/ProductModel");
+const CartModel = require("../models/CartModel");
 const ObjectId = mongoose.Types.ObjectId;
 
-const CreateWish = async (req)=>{
+const CreateCart = async (req)=>{
     try{
         let user_id=req.headers.id;
-        let reqBody=req.body;// Product ID
+        let reqBody=req.body;
+        let productID=reqBody.productID;
+
+        // Price Calculation
+        let product= await ProductModel.findOne({_id:productID});
+        let price=product.price;
+        if(product.discount){
+            price=product.discountPrice;
+        }
+        let totalPrice=price*reqBody.qty;
+
+
         reqBody.userID = user_id;
-        await  WishModel.updateOne({userID: user_id, productID: reqBody.productID}, {$set:reqBody}, {upsert:true})
-        return {status:"success", message:"Wish List Created"}
+        reqBody.price = totalPrice;
+
+
+        await  CartModel.updateOne({userID: user_id, productID: reqBody.productID}, {$set:reqBody}, {upsert:true})
+        return {status:"success", message:"Cart List Created"}
     }
     catch (e) {
         return {status:"fail", message:"Something Went Wrong"}
@@ -17,13 +32,13 @@ const CreateWish = async (req)=>{
 }
 
 
-const RemoveWish = async (req)=>{
+const RemoveCart = async (req)=>{
     try{
         let user_id=req.headers.id;
         let reqBody=req.body;// Product ID
         reqBody.userID = user_id;
-        await  WishModel.deleteOne({userID: user_id, productID: reqBody.productID})
-        return {status:"success", message:"Wish List Deleted"}
+        await  CartModel.deleteOne({userID: user_id, productID: reqBody.productID})
+        return {status:"success", message:"Cart Item Deleted"}
     }
     catch (e) {
         return {status:"fail", message:"Something Went Wrong"}
@@ -31,7 +46,7 @@ const RemoveWish = async (req)=>{
 }
 
 
-const Wish = async (req)=>{
+const Cart = async (req)=>{
     try{
 
         let user_id=new ObjectId(req.headers.id);
@@ -53,7 +68,7 @@ const Wish = async (req)=>{
                 'brand._id':0,'category._id':0,
         }}
 
-        let data= await WishModel.aggregate([
+        let data= await CartModel.aggregate([
             matchStage,
             JoinStageProduct,
             unwindProductStage,
@@ -74,4 +89,4 @@ const Wish = async (req)=>{
 
 
 
-module.exports = {CreateWish,RemoveWish,Wish};
+module.exports = {CreateCart,RemoveCart,Cart};

@@ -23,6 +23,17 @@ router.get('/SliderList',ProductController.SliderList)
 router.get('/ListByKeyword/:keyword',ProductController.ListByKeyword)
 
 
+router.get('/WishList',AuthVerification,ProductController.WishList)
+router.post('/CreateWishList',AuthVerification,ProductController.CreateWishList)
+router.post('/RemoveWishList',AuthVerification,ProductController.RemoveWishList)
+
+router.get('/CartList',AuthVerification,ProductController.CartList)
+router.post('/CreateCartList',AuthVerification,ProductController.CreateCartList)
+router.post('/RemoveCartList',AuthVerification,ProductController.RemoveCartList)
+
+
+
+
 
 router.get('/ListReview',ProductController.ListReview)
 router.get('/ProductDetails',ProductController.ProductDetails)
@@ -30,12 +41,7 @@ router.get('/ProductDetails',ProductController.ProductDetails)
 
 
 
-router.get('/WishList',ProductController.WishList)
-router.get('/CreateWishList',ProductController.CreateWishList)
-router.get('/RemoveWishList',ProductController.RemoveWishList)
-router.get('/CartList',ProductController.CartList)
-router.get('/CreateCartList',ProductController.CreateCartList)
-router.get('/RemoveCartList',ProductController.RemoveCartList)
+
 
 
 
@@ -51,11 +57,12 @@ router.post('/UpdateProfile',AuthVerification,ProfileController.UpdateProfile)
 router.get('/ReadProfile',AuthVerification,ProfileController.ReadProfile)
 
 
-
 // Invoice
 router.get('/InvoiceCreate',AuthVerification,InvoiceController.InvoiceCreate)
 router.get('/InvoiceList',AuthVerification,InvoiceController.InvoiceList)
 router.get('/InvoiceProductList',AuthVerification,InvoiceController.InvoiceProductList)
+
+
 router.get('/PaymentSuccess',InvoiceController.PaymentSuccess)
 router.get('/PaymentCancel',InvoiceController.PaymentCancel)
 router.get('/PaymentFail',InvoiceController.PaymentFail)
