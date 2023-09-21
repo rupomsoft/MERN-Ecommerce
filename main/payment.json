@@ -1,0 +1,10 @@
+{
+  "store_id": "teamr64c9e84055219",
+  "store_passwd": "teamr64c9e84055219@ssl",
+  "currency": "BDT",
+  "success_url": "www.ostad.com/success?",
+  "fail_url": "www.ostad.com/fail?",
+  "cancel_url": "www.ostad.com/cancel?",
+  "ipn_url": "www.ostad.com/ipn?",
+  "init_url": "https://sandbox.sslcommerz.com/gwprocess/v4/api.php"
+}
