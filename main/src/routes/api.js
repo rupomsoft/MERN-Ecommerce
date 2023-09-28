@@ -63,9 +63,9 @@ router.get('/InvoiceList',AuthVerification,InvoiceController.InvoiceList)
 router.get('/InvoiceProductList',AuthVerification,InvoiceController.InvoiceProductList)
 
 
-router.get('/PaymentSuccess',InvoiceController.PaymentSuccess)
-router.get('/PaymentCancel',InvoiceController.PaymentCancel)
-router.get('/PaymentFail',InvoiceController.PaymentFail)
-router.get('/PaymentIPN',InvoiceController.PaymentIPN)
+router.post('/PaymentSuccess/:trxID',InvoiceController.PaymentSuccess)
+router.post('/PaymentCancel/:trxID',InvoiceController.PaymentCancel)
+router.post('/PaymentFail/:trxID',InvoiceController.PaymentFail)
+router.post('/PaymentIPN/:trxID',InvoiceController.PaymentIPN)
 
 module.exports=router;

@@ -7,9 +7,9 @@ const DataSchema=mongoose.Schema({
         fail_url:{type:String,required:true},
         cancel_url:{type:String,required:true},
         ipn_url:{type:String,required:true},
-        init_url:{type:String,required:true},
+        init_url:{type:String,required:true}
     },
     {timestamps:true,versionKey:false}
 )
-const PaymentSettingModel=mongoose.model('paymentSettings',DataSchema);
+const PaymentSettingModel=mongoose.model('paymentsettings',DataSchema);
 module.exports=PaymentSettingModel;

@@ -57,18 +57,18 @@ const CalculateInvoice = async (req)=>{
 
         // 1 Payment Settings
 
-       // let  PaymentSetting= await PaymentSettingModel.find();
+        let  PaymentSetting= await PaymentSettingModel.find();
 
         const form = new FormData();
-        form.append('store_id', 'teamr64c9e84055219');
-        form.append('store_passwd', 'teamr64c9e84055219@ssl');
+        form.append('store_id', PaymentSetting[0]['store_id']);
+        form.append('store_passwd', PaymentSetting[0]['store_passwd']);
         form.append('total_amount', payable.toString());
-        form.append('currency', 'BDT');
+        form.append('currency', PaymentSetting[0]['currency']);
         form.append('tran_id', tran_id);
-        form.append('success_url', 'www.ostad.com');
-        form.append('fail_url', 'www.ostad.com');
-        form.append('cancel_url', 'www.ostad.com');
-        form.append('ipn_url', 'www.ostad.com');
+        form.append('success_url', `${PaymentSetting[0]['success_url']}/${tran_id}`);
+        form.append('fail_url', `${PaymentSetting[0]['fail_url']}/${tran_id}`);
+        form.append('cancel_url', `${PaymentSetting[0]['cancel_url']}/${tran_id}`);
+        form.append('ipn_url', `${PaymentSetting[0]['ipn_url']}/${tran_id}`);
 
         form.append('cus_name', Profile[0].cus_name);
         form.append('cus_email', cus_email);
@@ -93,12 +93,7 @@ const CalculateInvoice = async (req)=>{
         form.append('product_category', 'category');
         form.append('product_profile', 'profile');
         form.append('product_amount', '3');
-
-
-        let SSLRes=await axios.post("https://sandbox.sslcommerz.com/gwprocess/v4/api.php",form)
-
-
-
+        let SSLRes=await axios.post(PaymentSetting[0]['init_url'],form)
         return {status:"success", message:SSLRes.data}
     }
     catch (e) {
@@ -108,5 +103,50 @@ const CalculateInvoice = async (req)=>{
 
 
 
+const PaymentSuccessService = async (req)=>{
+    try{
+        let trxID= req.params.trxID;
+        await InvoiceModel.updateOne({tran_id:trxID},{payment_status:"success"})
+        return {status:"payment success"}
+    }catch (e) {
+        return {status:"fail", message:"Something Went Wrong"}
+    }
+}
 
-module.exports = {CalculateInvoice};
+
+const PaymentFailService = async (req)=>{
+    try{
+        let trxID= req.params.trxID;
+        await InvoiceModel.updateOne({tran_id:trxID},{payment_status:"fail"})
+        return {status:"payment fail"}
+    }catch (e) {
+        return {status:"fail", message:"Something Went Wrong"}
+    }
+}
+
+
+const PaymentCancelService = async (req)=>{
+    try{
+        let trxID= req.params.trxID;
+        await InvoiceModel.updateOne({tran_id:trxID},{payment_status:"cancel"})
+        return {status:"payment fail"}
+    }catch (e) {
+        return {status:"fail", message:"Something Went Wrong"}
+    }
+}
+
+
+const PaymentIPNService = async (req)=>{
+    try{
+        let trxID= req.params.trxID;
+        let status=req.body['status']
+        await InvoiceModel.updateOne({tran_id:trxID},{payment_status:status})
+        return {status:"payment fail"}
+    }catch (e) {
+        return {status:"fail", message:"Something Went Wrong"}
+    }
+}
+
+
+
+module.exports = {CalculateInvoice,PaymentSuccessService,PaymentIPNService,PaymentCancelService,PaymentFailService};
