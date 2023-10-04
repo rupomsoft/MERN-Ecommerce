@@ -1,4 +1,3 @@
-
 const mongoose = require("mongoose");
 const ProductModel = require("../models/ProductModel");
 const CartModel = require("../models/CartModel");
@@ -18,10 +17,8 @@ const CreateCart = async (req)=>{
         }
         let totalPrice=price*reqBody.qty;
 
-
         reqBody.userID = user_id;
         reqBody.price = totalPrice;
-
 
         await  CartModel.updateOne({userID: user_id, productID: reqBody.productID}, {$set:reqBody}, {upsert:true})
         return {status:"success", message:"Cart List Created"}
@@ -60,7 +57,6 @@ const Cart = async (req)=>{
 
         let JoinStageCategory={$lookup: {from: "categories", localField: "product.categoryID", foreignField: "_id", as: "category"}};
         let unwindCategoryStage={$unwind: "$category"}
-
         let projectionStage= {$project: {'_id': 0,
                 'userID': 0, 'createdAt':0,
                 'updatedAt':0,'product._id':0,
@@ -85,8 +81,5 @@ const Cart = async (req)=>{
         return {status:"fail", message:"Something Went Wrong"}
     }
 }
-
-
-
 
 module.exports = {CreateCart,RemoveCart,Cart};

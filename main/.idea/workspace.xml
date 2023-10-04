@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="255df5bc-967f-4a30-8e60-0097cac2dbd3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client/src/apiRequest/ApiRequest.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/css/animate.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/images/f1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/images/f2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/images/f3.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/images/f4.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/images/hero-bg.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/images/payment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/assets/images/plainb-logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/component/Brands.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/component/Categories.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/component/Features.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/component/Footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/component/Menu-Bar.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/component/Products.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/component/Slider.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/home-page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.eslintrc.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/public/vite.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/assets/react.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/vite.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/PaymentSettingModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/PaymentSettingModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/CartService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/CartService.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/opt/homebrew/Cellar/php/8.2.5/bin/php" />
+  <component name="ProjectId" id="2UU1YcIxoYAhMryvbdCLXsXmKnY" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/rabbilhasan/Documents/GitHub/MERN-Ecommerce/main/client",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client" />
+      <recent name="$PROJECT_DIR$/client/public" />
+      <recent name="$PROJECT_DIR$/client/src/assets/images" />
+      <recent name="$PROJECT_DIR$/client/src/components" />
+      <recent name="$PROJECT_DIR$/client/src/assets/css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/components" />
+      <recent name="$PROJECT_DIR$/client/src/assets/css" />
+      <recent name="$PROJECT_DIR$/client/src/assets" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.js" type="NodeJSConfigurationType" nameIsGenerated="true" path-to-js-file="index.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="255df5bc-967f-4a30-8e60-0097cac2dbd3" name="Changes" comment="" />
+      <created>1692979394699</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1692979394699</updated>
+      <workItem from="1692979397302" duration="5379000" />
+      <workItem from="1693413820709" duration="4986000" />
+      <workItem from="1693423508291" duration="598000" />
+      <workItem from="1693467933075" duration="598000" />
+      <workItem from="1693573142353" duration="747000" />
+      <workItem from="1693581096082" duration="7024000" />
+      <workItem from="1693589788085" duration="4000" />
+      <workItem from="1694017198784" duration="7600000" />
+      <workItem from="1694024900027" duration="598000" />
+      <workItem from="1694103171430" duration="121000" />
+      <workItem from="1694186135323" duration="7353000" />
+      <workItem from="1694276461774" duration="258000" />
+      <workItem from="1694277291993" duration="68000" />
+      <workItem from="1695227593117" duration="6144000" />
+      <workItem from="1695281877574" duration="77000" />
+      <workItem from="1695824267109" duration="1279000" />
+      <workItem from="1695834436298" duration="3052000" />
+      <workItem from="1695918952120" duration="1421000" />
+      <workItem from="1696000434891" duration="3396000" />
+      <workItem from="1696004002745" duration="75000" />
+      <workItem from="1696004081005" duration="8000" />
+      <workItem from="1696004091732" duration="130000" />
+      <workItem from="1696004515098" duration="663000" />
+      <workItem from="1696005202405" duration="2907000" />
+      <workItem from="1696437699923" duration="3687000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
