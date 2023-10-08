@@ -1,22 +1,30 @@
 import React, {useEffect, useState} from 'react';
-import ImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/css/image-gallery.css";
-import {DetailsListRequest} from "../apiRequest/ApiRequest.js";
+import {CreateCartListRequest, CreateWishListRequest, DetailsListRequest} from "../apiRequest/ApiRequest.js";
 import {useParams} from "react-router-dom";
-import parse from 'html-react-parser';
+import SmilierProduct from "./details/SmilierProduct.jsx";
+import Brands from "./Brands.jsx";
+import ProductImages from "./details/ProductImages.jsx";
+import Specifications from "./details/Specifications.jsx";
+import Review from "./details/Review.jsx";
+import toast, {Toaster} from "react-hot-toast";
 const Details = () => {
 
     let {id}=useParams()
-    const [quantity, setQuantity] = useState(1);
-
 
     const [data,setData]=useState([]);
+    const [images,setImages]=useState([])
     const [color,setColor]=useState([]);
     const [size,setSize]=useState([]);
+    const [quantity, setQuantity] = useState(1);
 
-    const [images,setImages]=useState([])
-
-
+    const [cartData, setCartData] = useState({productID:id, qty:1, color:"", size:""});
+    
+    const inputOnChange = (name,value) => {
+        setCartData((cartData)=>({
+            ...cartData,
+            [name]:value
+        }))
+    }
 
     useEffect(()=>{
 
@@ -45,9 +53,6 @@ const Details = () => {
         })()
 
     },[0])
-
-
-
     const incrementQuantity = () => {
         setQuantity(quantity => quantity + 1);
     };
@@ -58,24 +63,45 @@ const Details = () => {
         }
     };
 
-    const AddCart = (e) => {
-      e.preventDefault();
+    const AddCart = async () => {
+        if (cartData['color'].length === 0) {
+            toast.error("Color Required!")
+        } else if (cartData['size'].length === 0) {
+            toast.error("Size Required!")
+        } else {
+            let res = await CreateCartListRequest(cartData)
+            if(res['status']==="success"){
+                toast.success(res['message'])
+            }else{
+                toast.error(res['message'])
+            }
+        }
+
+    }
+
+    const AddWish =async () => {
+     let res =await CreateWishListRequest(id);
+     if(res['status']==="success"){
+         toast.success(res['message'])
+     }else{
+         toast.error(res['message'])
+     }
     }
 
     return (
         <div>
             <div className="container mt-5">
                 <div className="row">
-                    <div className="col-md-7">
-                        <ImageGallery autoPlay={true} items={images} />
+
+                    <div className="col-md-7 p-3">
+                        <ProductImages images={images}/>
                     </div>
 
-                    <div className="col-md-5">
-                        <h2>Product Name</h2>
+                    <div className="col-md-5 p-3">
+                        <h4>{data[0]?(data[0]['title']):("")}</h4>
                         <p className="text-muted bodySmal my-1">Category: {data[0]?(data[0]['category']['categoryName']):("")}</p>
                         <p className="text-muted bodySmal mb-2 mt-1">Brand: {data[0]?(data[0]['brand']['brandName']):("")}</p>
                         <p className="bodySmal mb-2 mt-1">{data[0]?(data[0]['shortDes']):("")}</p>
-
                         <h4>{(()=>{
                             if(data[0]){
                                 if(data[0]['discount']===true){
@@ -85,13 +111,12 @@ const Details = () => {
                                     return <span>${data[0]['price']}</span>
                                 }
                             }
-
                         })()}</h4>
-
                         <div className="row">
                             <div className="col-4 p-2">
                                 <label className="bodySmal">Size</label>
-                                <select  className="form-control my-2 form-select">
+                                <select value={cartData['size']} onChange={(e)=>{inputOnChange('size',e.target.value)}} className="form-control my-2 form-select">
+                                    <option  value="">Choose Size</option>
                                     {
                                         size.map((item,i)=>{
                                             return <option key={i} value={item}>{item}</option>
@@ -101,7 +126,8 @@ const Details = () => {
                             </div>
                             <div className="col-4  p-2">
                                 <label className="bodySmal">Color</label>
-                                <select className="form-control my-2 form-select">
+                                <select value={cartData['color']} onChange={(e)=>{inputOnChange('color',e.target.value)}}  className="form-control my-2 form-select">
+                                    <option  value="">Choose Color</option>
                                     {
                                         color.map((item,i)=>{
                                             return <option key={i} value={item}>{item}</option>
@@ -113,19 +139,20 @@ const Details = () => {
                                 <label className="bodySmal">Quantity</label>
                                 <div className="input-group my-2">
                                     <button onClick={decrementQuantity} className="btn btn-outline-secondary" disabled={quantity <= 1}>-</button>
-                                    <input type="text" value={quantity} className="form-control bg-light text-center" readOnly/>
+                                    <input onChange={(e)=>{inputOnChange('qty',e.target.value)}} type="text" value={quantity} className="form-control bg-light text-center" readOnly/>
                                     <button onClick={incrementQuantity} className="btn btn-outline-secondary">+</button>
                                 </div>
                             </div>
                             <div className="col-4  p-2">
-                                <button type="submit" className="btn w-100 btn-success">Add to Cart</button>
+                                <button onClick={AddCart} className="btn w-100 btn-success">Add to Cart</button>
                             </div>
                             <div className="col-4  p-2">
-                                <button type="submit" className="btn w-100 btn-success">Add to Wish</button>
+                                <button onClick={AddWish} className="btn w-100 btn-success">Add to Wish</button>
                             </div>
                         </div>
                     </div>
                 </div>
+
 
                 <div className="row mt-3">
                     <ul className="nav nav-tabs" id="myTab" role="tablist">
@@ -139,19 +166,19 @@ const Details = () => {
                     </ul>
                     <div className="tab-content" id="myTabContent">
                         <div className="tab-pane fade show active" id="Speci-tab-pane" role="tabpanel" aria-labelledby="Speci-tab" tabIndex="0">
-                            {
-                                data[0]?(
-                                    parse(data[0]['details']['des'])
-                                ):("")
-                            }
-
+                            <Specifications data={data}/>
                         </div>
-                        <div className="tab-pane fade" id="Review-tab-pane" role="tabpanel" aria-labelledby="Review-tab" tabIndex="0">...</div>
-
+                        <div className="tab-pane fade" id="Review-tab-pane" role="tabpanel" aria-labelledby="Review-tab" tabIndex="0">
+                            <Review/>
+                        </div>
                     </div>
                 </div>
             </div>
 
+            {data[0]?(<SmilierProduct categoryID={data[0]['categoryID']}/>):("")}
+
+            <Brands/>
+            <Toaster position={"bottom-center"} />
         </div>
     );
 };

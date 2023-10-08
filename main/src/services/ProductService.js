@@ -148,7 +148,7 @@ const DetailsBYID= async (req)=>{
         let JoinStage3={$lookup: {from: "productdetails", localField: "_id", foreignField: "productID", as: "details"}};
 
 
-        let projectionStage= {$project: {'category._id': 0, 'brand._id': 0, 'categoryID':0, 'brandID':0,'details._id':0,'details.productID':0}}
+        let projectionStage= {$project: {'category._id': 0, 'brand._id': 0,'details._id':0,'details.productID':0}}
         let unwindCategoryStage={$unwind: "$category"}
         let unwindBrandStage={$unwind: "$brand"}
         let unwindDetailsStage={$unwind: "$details"}

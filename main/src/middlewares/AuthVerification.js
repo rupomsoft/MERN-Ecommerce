@@ -1,6 +1,11 @@
 const {DecodeToken} = require("../utility/TokenHelper");
 module.exports = (req, res, next) => {
-    let token = req.headers['token']
+
+    let token = req.headers['token'] // Token From Other's
+    if(!token){
+        token=req.cookies['token']; // Token From Web
+    }
+
     let decoded= DecodeToken(token);
 
     if(decoded===null){

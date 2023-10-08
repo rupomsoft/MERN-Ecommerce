@@ -28,7 +28,7 @@ const Footer = () => {
               </div>
           </div>
           <div className="bg-dark py-3 text-center">
-                <p1 className="text-white bodySmal">All Rights Reserved </p1>
+                <p className="text-white bodySmal">All Rights Reserved </p>
           </div>
       </div>
     );
