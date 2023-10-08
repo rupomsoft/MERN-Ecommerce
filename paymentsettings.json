@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "650ce9fb6fdcbe321fc6a4e0"
+  },
+  "store_id": "teamr64c9e84055219",
+  "store_passwd": "teamr64c9e84055219@ssl",
+  "currency": "BDT",
+  "success_url": "http://localhost:5020/api/v1/PaymentSuccess",
+  "fail_url": "http://localhost:5020/api/v1/PaymentFail",
+  "cancel_url": "http://localhost:5020/api/v1/PaymentCancel",
+  "ipn_url": "http://localhost:5020/api/v1/PaymentIPN",
+  "init_url": "https://sandbox.sslcommerz.com/gwprocess/v4/api.php"
+}]

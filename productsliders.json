@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "64f8895d502e1b80556da15f"
+  },
+  "title": "First slide label 1",
+  "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+  "price": "1000",
+  "image": "https://photo.teamrabbil.com/images/2023/10/03/Apple.png",
+  "productID": {
+    "$oid": "64f87d60502e1b80556da15a"
+  }
+},{
+  "_id": {
+    "$oid": "64f8bea58fcc62fe3de37a36"
+  },
+  "title": "First slide label 2",
+  "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+  "price": "1000",
+  "image": "https://photo.teamrabbil.com/images/2023/10/03/Apple.png",
+  "productID": {
+    "$oid": "64f87d60502e1b80556da15a"
+  }
+},{
+  "_id": {
+    "$oid": "64f8bea88fcc62fe3de37a37"
+  },
+  "title": "First slide label 3",
+  "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+  "price": "1000",
+  "image": "https://photo.teamrabbil.com/images/2023/10/03/Apple.png",
+  "productID": {
+    "$oid": "64f87d60502e1b80556da15a"
+  }
+},{
+  "_id": {
+    "$oid": "64f8beaa8fcc62fe3de37a38"
+  },
+  "title": "First slide label 4",
+  "des": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+  "price": "1000",
+  "image": "https://photo.teamrabbil.com/images/2023/10/03/Apple.png",
+  "productID": {
+    "$oid": "64f87d60502e1b80556da15a"
+  }
+}]

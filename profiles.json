@@ -1,0 +1,75 @@
+[{
+  "_id": {
+    "$oid": "64f8aeb97f12bc50f73e957b"
+  },
+  "userID": {
+    "$oid": "64f865337f12bc50f718d79a"
+  },
+  "createdAt": {
+    "$date": "2023-09-06T16:54:17.469Z"
+  },
+  "cus_add": "Dhaka",
+  "cus_city": "Dhaka",
+  "cus_country": "Bangladesh",
+  "cus_fax": "01774688159",
+  "cus_name": "Rabbil Hasan",
+  "cus_phone": "01774688159",
+  "cus_postcode": "1200",
+  "cus_state": "Dhaka",
+  "ship_add": "Dhaka",
+  "ship_city": "Dhaka",
+  "ship_country": "Bangladesh",
+  "ship_name": "Rabbil Hasan",
+  "ship_phone": "Bangladesh",
+  "ship_postcode": "1200",
+  "ship_state": "Dhaka",
+  "updatedAt": {
+    "$date": "2023-09-06T16:55:10.499Z"
+  }
+},{
+  "_id": {
+    "$oid": "64ff260c858e47157a0f7068"
+  },
+  "userID": null,
+  "createdAt": {
+    "$date": "2023-09-11T14:36:59.735Z"
+  },
+  "cus_country": "Bangladesh",
+  "cus_fax": "0000",
+  "cus_postcode": "1200",
+  "cus_state": "Dhaka",
+  "ship_country": "Bangladesh",
+  "ship_postcode": "1200",
+  "ship_state": "Dhaka",
+  "updatedAt": {
+    "$date": "2023-09-11T14:36:59.735Z"
+  }
+},{
+  "_id": {
+    "$oid": "65011b2bf6d7471fab56217e"
+  },
+  "userID": {
+    "$oid": "64ff1434858e47157a0639ae"
+  },
+  "createdAt": {
+    "$date": "2023-09-13T02:15:06.523Z"
+  },
+  "cus_add": "Dinajpur",
+  "cus_city": "Dinajpur",
+  "cus_country": "Bangladesh",
+  "cus_fax": "0177468815945",
+  "cus_name": "Rayhan HaBabusan",
+  "cus_phone": "01750360044",
+  "cus_postcode": "5210",
+  "cus_state": "Birol",
+  "ship_add": "Birol",
+  "ship_city": "Dhaka",
+  "ship_country": "Bangladesh",
+  "ship_name": "Rayhan Babu",
+  "ship_phone": "Bangladesh",
+  "ship_postcode": "1210",
+  "ship_state": "Dhaka",
+  "updatedAt": {
+    "$date": "2023-09-13T02:18:54.258Z"
+  }
+}]

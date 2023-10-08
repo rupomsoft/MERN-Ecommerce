@@ -21,6 +21,10 @@ router.get('/ListByBrand/:brandID',ProductController.ListByBrand)
 router.get('/ListByRemark/:remark',ProductController.ListByRemark)
 router.get('/SliderList',ProductController.SliderList)
 router.get('/ListByKeyword/:keyword',ProductController.ListByKeyword)
+router.get('/ListDetails/:id',ProductController.ProductDetails)
+
+
+
 
 
 router.get('/WishList',AuthVerification,ProductController.WishList)
@@ -35,8 +39,6 @@ router.post('/RemoveCartList',AuthVerification,ProductController.RemoveCartList)
 
 
 
-router.get('/ListReview',ProductController.ListReview)
-router.get('/ProductDetails',ProductController.ProductDetails)
 
 
 

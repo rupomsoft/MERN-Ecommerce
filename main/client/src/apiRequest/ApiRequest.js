@@ -37,3 +37,27 @@ export  async function ProductListByRemarkRequest(Remark) {
         return [];
     }
 }
+
+
+export  async function SliderListRequest() {
+    try {
+        let result=await axios.get(BASEURL+'/api/v1/SliderList');
+        let data=result.data['data'];
+        return data;
+    }
+    catch (e) {
+        return [];
+    }
+}
+
+
+export  async function DetailsListRequest(id) {
+    try {
+        let result=await axios.get(BASEURL+'/api/v1/ListDetails/'+id);
+        let data=result.data['data'];
+        return data;
+    }
+    catch (e) {
+        return [];
+    }
+}

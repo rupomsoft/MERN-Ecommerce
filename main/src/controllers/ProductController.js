@@ -1,4 +1,4 @@
-const {ProductBYRemark,ProductBYCategory, ProductBYBrand,ProductBYCategoryLimit10, ProductBYSlider, ProductBYKeyword} = require("../services/ProductService");
+const {ProductBYRemark,ProductBYCategory,DetailsBYID, ProductBYBrand,ProductBYCategoryLimit10, ProductBYSlider, ProductBYKeyword} = require("../services/ProductService");
 const {CreateWish,RemoveWish,Wish} = require("../services/WishService");
 const {CreateCart, Cart,RemoveCart} = require("../services/CartService");
 
@@ -34,7 +34,8 @@ exports.ListReview=async (req,res)=>{
 
 
 exports.ProductDetails=async (req,res)=>{
-
+    let result=await  DetailsBYID(req)
+    return res.status(200).json(result)
 }
 
 

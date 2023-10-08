@@ -1,0 +1,115 @@
+[{
+  "_id": {
+    "$oid": "64f87d60502e1b80556da15a"
+  },
+  "title": "Laptop",
+  "shortDes": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,",
+  "price": "1000",
+  "discount": true,
+  "discountPrice": "890",
+  "image": "https://photo.teamrabbil.com/images/2023/08/15/Phones--Tablets-01-3944.png",
+  "star": "4",
+  "stock": true,
+  "remark": "new",
+  "categoryID": {
+    "$oid": "64f875ed502e1b80556da14d"
+  },
+  "brandID": {
+    "$oid": "64f8751a502e1b80556da142"
+  }
+},{
+  "_id": {
+    "$oid": "64f8ba608fcc62fe3de37a2e"
+  },
+  "title": "Laptop",
+  "shortDes": "Laptop",
+  "price": "1000",
+  "discount": true,
+  "discountPrice": "70",
+  "image": "https://photo.teamrabbil.com/images/2023/08/15/Phones--Tablets-01-3944.png",
+  "star": "4",
+  "stock": true,
+  "remark": "new",
+  "categoryID": {
+    "$oid": "64f875ed502e1b80556da14d"
+  },
+  "brandID": {
+    "$oid": "64f8751a502e1b80556da142"
+  }
+},{
+  "_id": {
+    "$oid": "651da4431ce672f6c8b7961c"
+  },
+  "title": "Laptop",
+  "shortDes": "Apple",
+  "price": "1000",
+  "discount": false,
+  "discountPrice": "0",
+  "image": "https://photo.teamrabbil.com/images/2023/08/15/Phones--Tablets-01-3944.png",
+  "star": "4",
+  "stock": true,
+  "remark": "top",
+  "categoryID": {
+    "$oid": "64f875ed502e1b80556da14d"
+  },
+  "brandID": {
+    "$oid": "64f8751a502e1b80556da142"
+  }
+},{
+  "_id": {
+    "$oid": "651da44d1ce672f6c8b7961d"
+  },
+  "title": "Laptop",
+  "shortDes": "Apple",
+  "price": "1000",
+  "discount": false,
+  "discountPrice": "0",
+  "image": "https://photo.teamrabbil.com/images/2023/08/15/Phones--Tablets-01-3944.png",
+  "star": "4",
+  "stock": true,
+  "remark": "trending",
+  "categoryID": {
+    "$oid": "64f875ed502e1b80556da14d"
+  },
+  "brandID": {
+    "$oid": "64f8751a502e1b80556da142"
+  }
+},{
+  "_id": {
+    "$oid": "651da4531ce672f6c8b7961e"
+  },
+  "title": "Laptop",
+  "shortDes": "Apple",
+  "price": "1000",
+  "discount": false,
+  "discountPrice": "0",
+  "image": "https://photo.teamrabbil.com/images/2023/08/15/Phones--Tablets-01-3944.png",
+  "star": "4",
+  "stock": true,
+  "remark": "special",
+  "categoryID": {
+    "$oid": "64f875ed502e1b80556da14d"
+  },
+  "brandID": {
+    "$oid": "64f8751a502e1b80556da142"
+  }
+},{
+  "_id": {
+    "$oid": "651da47f1ce672f6c8b7961f"
+  },
+  "title": "Laptop",
+  "shortDes": "Apple",
+  "price": "1000",
+  "discount": false,
+  "discountPrice": "0",
+  "image": "https://photo.teamrabbil.com/images/2023/08/15/Phones--Tablets-01-3944.png",
+  "star": "4",
+  "stock": true,
+  "remark": "popular",
+  "categoryID": {
+    "$oid": "64f875ed502e1b80556da14d"
+  },
+  "brandID": {
+    "$oid": "64f8751a502e1b80556da142"
+  }
+}]

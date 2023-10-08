@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "64f865337f12bc50f718d79a"
+  },
+  "email": "engr.rabbil@yahoo.com",
+  "createdAt": {
+    "$date": "2023-09-06T11:40:27.247Z"
+  },
+  "otp": "0",
+  "updatedAt": {
+    "$date": "2023-09-27T17:11:32.735Z"
+  }
+},{
+  "_id": {
+    "$oid": "64ff1434858e47157a0639ae"
+  },
+  "email": "rayhanbabu458@gmail.com",
+  "createdAt": {
+    "$date": "2023-09-11T13:20:52.400Z"
+  },
+  "otp": "0",
+  "updatedAt": {
+    "$date": "2023-09-28T13:36:50.480Z"
+  }
+},{
+  "_id": {
+    "$oid": "6518ebfd8072c53bf179a94b"
+  },
+  "email": "nazmul@gmail.com",
+  "createdAt": {
+    "$date": "2023-10-01T03:48:13.808Z"
+  },
+  "otp": "523438",
+  "updatedAt": {
+    "$date": "2023-10-01T03:48:13.808Z"
+  }
+}]
