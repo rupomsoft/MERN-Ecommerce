@@ -2,49 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5054c071-9a52-43c8-9173-d43a722bea58" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/main/client/public/images/fill-outline.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/public/images/healthy-food.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/public/images/lemonade.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/public/images/medicine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/public/images/pro-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/public/images/pro-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/public/images/pro-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/public/images/pro-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/public/images/pro-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/public/images/pro-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/public/images/pro-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/public/images/pro-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/public/images/sandwich.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/public/images/user-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/public/images/user-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/public/images/user-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/src/assets/css/App.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/src/assets/images/free-good.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/src/assets/images/healtful.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/src/assets/images/products.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/src/assets/images/returns.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/src/components/our-product/OurProduct.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/src/components/our-product/our-product.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main/client/src/pages/home-page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/.idea/main.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/.idea/php.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/client/.eslintrc.cjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/client/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/client/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/client/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/client/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/client/public/vite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/client/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/client/src/App.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/client/src/assets/react.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/client/src/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/client/src/main.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/client/vite.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/models/PaymentSettingModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/models/PaymentSettingModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/src/services/CartService.js" beforeDir="false" afterPath="$PROJECT_DIR$/main/src/services/CartService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/main/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +16,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/opt/homebrew/Cellar/php/8.2.5/bin/php" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
   <component name="ProjectId" id="2WJ58JEuXWW6ALZNxwvgSvk2MTA" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -65,6 +26,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
@@ -80,6 +42,7 @@
       <option name="presentableId" value="Default" />
       <updated>1696437681781</updated>
       <workItem from="1696437682943" duration="7000" />
+      <workItem from="1696840844712" duration="3000" />
     </task>
     <servers />
   </component>

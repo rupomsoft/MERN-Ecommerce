@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../assets/images/plainb-logo.svg"
+import logo from "../../assets/images/plainb-logo.svg"
 import {Link} from "react-router-dom";
 const MenuBar = () => {
     return (

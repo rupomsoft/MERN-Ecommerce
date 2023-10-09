@@ -1,0 +1,29 @@
+[{
+  "_id": {
+    "$oid": "6523f504caeadcd818561fb0"
+  },
+  "name": "Free Delivery",
+  "description": "For All Orders Over $99",
+  "img": "https://photo.teamrabbil.com/images/2023/10/09/f1.png"
+},{
+  "_id": {
+    "$oid": "6523f504caeadcd818561fb1"
+  },
+  "name": "90 Days Return",
+  "description": "If goods have problem",
+  "img": "https://photo.teamrabbil.com/images/2023/10/09/f2.png"
+},{
+  "_id": {
+    "$oid": "6523f504caeadcd818561fb2"
+  },
+  "name": "Secure Payment",
+  "description": "100% Secure Payment",
+  "img": "https://photo.teamrabbil.com/images/2023/10/09/f3.png"
+},{
+  "_id": {
+    "$oid": "6523f504caeadcd818561fb3"
+  },
+  "name": "24/7 Support",
+  "description": "Dedicated Support",
+  "img": "https://photo.teamrabbil.com/images/2023/10/09/f4.png"
+}]

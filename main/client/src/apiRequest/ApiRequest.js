@@ -1,6 +1,8 @@
 import axios from "axios";
 import unauthorized from "../utility/unauthorized.js";
 
+
+
 let BASEURL="";
 
 export  async function BrandListRequest() {
@@ -27,7 +29,6 @@ export  async function CategoryListRequest() {
 }
 
 
-
 export  async function ProductListByRemarkRequest(Remark) {
     try {
         let result=await axios.get(BASEURL+'/api/v1/ListByRemark/'+Remark);
@@ -50,7 +51,6 @@ export  async function SliderListRequest() {
         return [];
     }
 }
-
 
 export  async function DetailsListRequest(id) {
     try {
@@ -77,6 +77,7 @@ export  async function ListBySmilierRequest(categoryID) {
 
 export  async function CreateWishListRequest(productID) {
     try {
+
         let URL=BASEURL+'/api/v1/CreateWishList';
         let reqBody={"productID":productID}
         let result=await axios.post(URL,reqBody);
@@ -91,13 +92,13 @@ export  async function CreateWishListRequest(productID) {
 
 
 
-
-
 export  async function CreateCartListRequest(reqBody) {
     try {
+
         let URL=BASEURL+'/api/v1/CreateCartList';
         let result=await axios.post(URL,reqBody);
         let data=result.data;
+
         return data;
     }
     catch (e) {
@@ -107,30 +108,31 @@ export  async function CreateCartListRequest(reqBody) {
 }
 
 
-
-
-
 export  async function UserLoginRequest(email) {
     try {
+
         let URL=BASEURL+'/api/v1/UserLogin/'+email;
         let result=await axios.get(URL);
         let data=result.data
+
         return data;
     }
     catch (e) {
         return false
     }
 }
+
 
 export  async function VerifyLoginRequest(email,code) {
     try {
+
         let URL=BASEURL+'/api/v1/VerifyLogin/'+email+"/"+code;
         let result=await axios.get(URL);
         let data=result.data
+
         return data;
     }
     catch (e) {
         return false
     }
 }
-
