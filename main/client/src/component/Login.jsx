@@ -27,7 +27,7 @@ const Login = () => {
         <div className="container section">
             <div className="row d-flex justify-content-center">
                 <div className="col-md-5">
-                    <div className="card bg-light">
+                    <div className="card h-100 ">
                         <div className="card-body">
                             <form>
                                  <label className="form-label my-2">Your Email Address</label>

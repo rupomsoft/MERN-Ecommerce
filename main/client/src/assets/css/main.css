@@ -48,6 +48,23 @@ body {
     font-size: 14px;
 }
 
+
+
+.spinner-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.95); /* Semi white background */
+    z-index: 10000; /* Ensure spinner appears above all other elements */
+}
+
+
+
 .section{
     margin-top: 80px !important;
     margin-bottom: 40px !important;

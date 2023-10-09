@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from "../assets/images/plainb-logo.svg"
+import {Link} from "react-router-dom";
 const MenuBar = () => {
     return (
         <>
@@ -36,9 +37,10 @@ const MenuBar = () => {
                         <button type="button" className="btn ms-3 btn-dark d-flex">
                             <i className="bi bi-heart"></i>
                         </button>
-                        <button type="button" className="btn ms-3 btn-success d-flex">
-                            <i className="bi mx-1 bi-person"></i> Account
-                        </button>
+                        <Link
+                            type="button" className="btn ms-3 btn-success d-flex" to="/login">
+                           Login
+                        </Link>
                     </div>
                 </div>
             </nav>
