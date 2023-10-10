@@ -25,7 +25,6 @@ const Brands = () => {
                     <h1 className="headline-4 text-center my-2 p-0">Top Brands</h1>
                     <span className="bodySmal mb-5 text-center">Explore a World of Choices Across Our Most Popular <br/>Shopping Categories</span>
 
-
                     {
                         data.length>0?(
                             data.map((item,i)=>{

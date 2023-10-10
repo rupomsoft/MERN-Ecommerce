@@ -4,8 +4,9 @@ const ProductModel = require("../models/ProductModel");
 const mongoose = require("mongoose");
 const ProductSliderModel = require("../models/ProductSliderModel");
 const ProductDetailModel = require("../models/ProductDetailModel");
-const ObjectId = mongoose.Types.ObjectId;
+const FeaturesModel = require("../models/FeaturesModel");
 
+const ObjectId = mongoose.Types.ObjectId;
 
 const AllCategories= async ()=>{
     try{
@@ -17,11 +18,21 @@ const AllCategories= async ()=>{
     }
 }
 
-
 const AllBrands= async ()=>{
     try{
         let data=await BrandModel.find()
         return {status:"success", data:data}
+    }
+    catch (e) {
+        return {status:"fail", data:"Something Went Wrong"}
+    }
+}
+
+
+const AllFeatures= async ()=>{
+    try{
+        let data=await FeaturesModel.find()
+        return {status:"success",data:data}
     }
     catch (e) {
         return {status:"fail", data:"Something Went Wrong"}
@@ -176,6 +187,7 @@ const DetailsBYID= async (req)=>{
 
 
 module.exports = {
+    AllFeatures,
     DetailsBYID,
     AllCategories,
     AllBrands,

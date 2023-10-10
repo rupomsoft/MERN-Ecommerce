@@ -1,75 +1,54 @@
-import React from 'react';
-import f1 from "../assets/images/f1.svg"
-import f2 from "../assets/images/f2.svg"
-import f3 from "../assets/images/f3.svg"
-import f4 from "../assets/images/f4.svg"
+import React, {useEffect, useState} from 'react';
+import {FeaturesListRequest} from "../apiRequest/ApiRequest.js";
+import FeaturesSkeleton from "./loader/FeaturesSkeleton.jsx";
+
 const Features = () => {
-    return (
-        <div className="container section">
-            <div className="row">
-                <div className="col-6 p-2 col-md-3 col-lg-3 col-sm-6">
-                    <div className="card shadow-sm">
-                        <div className="card-body">
-                            <div className="row">
-                                <div className="col-3">
-                                    <img className="w-100" src={f1}/>
+
+    const [data,setData]=useState([])
+
+    useEffect(()=>{
+
+        (async () => {
+            let result= await FeaturesListRequest();
+            setData(result);
+        })()
+
+    },[0])
+
+
+
+    if(data.length===0){
+        return <FeaturesSkeleton/>
+    }
+    else{
+        return (
+            <div className="container section">
+                <div className="row">
+                    {
+                        data.map((item,i)=>{
+                            return(
+                                <div className="col-6 p-2 col-md-3 col-lg-3 col-sm-6">
+                                    <div className="card shadow-sm">
+                                        <div className="card-body">
+                                            <div className="row">
+                                                <div className="col-3">
+                                                    <img className="w-100" src={item['img']}/>
+                                                </div>
+                                                <div className="col-9">
+                                                    <h3 className="bodyXLarge">{item['name']}</h3>
+                                                    <span className="bodySmal">{item['description']}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="col-9">
-                                        <h3 className="bodyXLarge">Free Delivery</h3>
-                                        <span className="bodySmal">For All Orders Over $99</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-6 p-2 col-md-3 col-lg-3 col-sm-6">
-                    <div className="card shadow-sm">
-                        <div className="card-body">
-                            <div className="row">
-                                <div className="col-3">
-                                    <img className="w-100" src={f2}/>
-                                </div>
-                                <div className="col-9">
-                                    <h3 className="bodyXLarge">90 Days Return</h3>
-                                    <span className="bodySmal">If goods have problem</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-6 p-2 col-md-3 col-lg-3 col-sm-6">
-                    <div className="card shadow-sm">
-                        <div className="card-body">
-                            <div className="row">
-                                <div className="col-3">
-                                    <img className="w-100" src={f3}/>
-                                </div>
-                                <div className="col-9">
-                                    <h3 className="bodyXLarge">Secure Payment</h3>
-                                    <span className="bodySmal">100% Secure Payment</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-6 p-2 col-md-3 col-lg-3 col-sm-6">
-                    <div className="card shadow-sm">
-                        <div className="card-body">
-                            <div className="row">
-                                <div className="col-3">
-                                    <img className="w-100" src={f4}/>
-                                </div>
-                                <div className="col-9">
-                                    <h3 className="bodyXLarge">24/7 Support</h3>
-                                    <span className="bodySmal">Dedicated Support</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                            )
+                        })
+                    }
                 </div>
             </div>
-        </div>
-    );
+        );
+    }
 };
 
 export default Features;

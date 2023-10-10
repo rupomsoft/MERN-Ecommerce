@@ -17,6 +17,18 @@ export  async function BrandListRequest() {
 }
 
 
+export  async function FeaturesListRequest() {
+    try {
+        let result=await axios.get(BASEURL+'/api/v1/FeatureList');
+        let data=result.data['data'];
+        return data;
+    }
+    catch (e) {
+        return [];
+    }
+}
+
+
 export  async function CategoryListRequest() {
     try {
         let result=await axios.get(BASEURL+'/api/v1/CategoryList');
@@ -89,7 +101,6 @@ export  async function CreateWishListRequest(productID) {
         return [];
     }
 }
-
 
 
 export  async function CreateCartListRequest(reqBody) {

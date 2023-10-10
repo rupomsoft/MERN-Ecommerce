@@ -5,14 +5,18 @@ const ProductController = require("../controllers/ProductController");
 const UserController = require("../controllers/UserController");
 const ProfileController = require("../controllers/ProfileController");
 const InvoiceController = require("../controllers/InvoiceController");
+const FeaturesController = require("../controllers/FeaturesController");
 const AuthVerification = require("../middlewares/AuthVerification");
 
 const router=express.Router();
+
 
 // Brand Category
 router.get('/BrandList',BrandController.BrandList)
 router.get('/CategoryList',CategoryController.CategoryList)
 
+// Features
+router.get('/FeatureList',FeaturesController.FeatureList)
 
 // Product
 router.get('/ListByCategory/:categoryID',ProductController.ListByCategory)

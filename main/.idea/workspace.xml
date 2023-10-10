@@ -5,26 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddc628d6-6746-4416-9032-edc63da21e55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/assets/images/ImagePlaceholder.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/assets/images/image.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/component/loader/SliderSkeleton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/component/menu-bar/menuBarStore.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controllers/FeaturesController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/models/FeaturesModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/component/loader/BrandsSkeleton.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/component/loader/CategoriesSkeleton.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/component/loader/FeaturesSkeleton.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/apiRequest/ApiRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/apiRequest/ApiRequest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/Master.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Master.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/Menu-Bar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/menu-bar/Menu-Bar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Slider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/loader/Loader.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/loader/LoaderContext.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/component/Brands.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Brands.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/component/Categories.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Categories.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/component/Features.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Features.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/component/loader/SliderSkeleton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/loader/SliderSkeleton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/FeaturesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/FeaturesController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/ProductService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ProductService.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,21 +48,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/rabbil/Downloads/Github/MERN-Ecommerce/main/src/controllers",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rabbil/Downloads/Github/MERN-Ecommerce/main/src/controllers&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\rabbil\Downloads\Github\MERN-Ecommerce\main\src\controllers" />

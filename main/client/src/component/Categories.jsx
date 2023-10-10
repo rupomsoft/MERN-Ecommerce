@@ -1,6 +1,7 @@
 import React,{useState,useEffect} from 'react';
 import {Link} from "react-router-dom";
 import {CategoryListRequest} from "../apiRequest/ApiRequest.js";
+import CategoriesSkeleton from "./loader/CategoriesSkeleton.jsx";
 
 
 const Categories = () => {
@@ -18,17 +19,17 @@ const Categories = () => {
     },[0])
 
 
-
-
-    return (
-        <div className="section">
-            <div className="container">
-                <div className="row">
-                    <h1 className="headline-4 text-center my-2 p-0">Top Categories</h1>
-                    <span className="bodySmal mb-5 text-center">Explore a World of Choices Across Our Most Popular <br/>Shopping Categories</span>
-
-                    {
-                        data.length>0?(
+    if(data.length===0){
+        return  <CategoriesSkeleton/>
+    }
+    else{
+        return (
+            <div className="section">
+                <div className="container">
+                    <div className="row">
+                        <h1 className="headline-4 text-center my-2 p-0">Top Categories</h1>
+                        <span className="bodySmal mb-5 text-center">Explore a World of Choices Across Our Most Popular <br/>Shopping Categories</span>
+                        {
                             data.map((item,i)=>{
                                 return(
                                     <div className="col-6 col-lg-8r text-center col-md-8r p-2">
@@ -41,13 +42,12 @@ const Categories = () => {
                                     </div>
                                 )
                             })
-                        ):(<span className="text-center">No Data Found</span>)
-                    }
-
+                        }
+                    </div>
                 </div>
             </div>
-        </div>
-    );
+        );
+    }
 };
 
 export default Categories;
