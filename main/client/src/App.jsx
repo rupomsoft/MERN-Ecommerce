@@ -4,7 +4,6 @@ import HomePage from "./pages/home-page.jsx";
 import DetailsPage from "./pages/details-page.jsx";
 import VerifyPage from "./pages/verify-page.jsx";
 import LoginPage from "./pages/login-page.jsx";
-
 const App = () => {
     return (
         <BrowserRouter>

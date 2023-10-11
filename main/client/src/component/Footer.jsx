@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
+import ScrollToTop from "./ScrollToTop.jsx";
 
 const Footer = () => {
     return (
@@ -30,6 +31,7 @@ const Footer = () => {
           <div className="bg-dark py-3 text-center">
                 <p className="text-white bodySmal">All Rights Reserved </p>
           </div>
+
       </div>
     );
 };

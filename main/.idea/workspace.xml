@@ -5,19 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddc628d6-6746-4416-9032-edc63da21e55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/component/loader/BrandsSkeleton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/component/loader/CategoriesSkeleton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/component/loader/FeaturesSkeleton.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/component/ScrollToTop.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/component/loader/ProductsSkeleton.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/apiRequest/ApiRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/apiRequest/ApiRequest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/component/Brands.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Brands.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/component/Categories.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Categories.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/component/Features.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Features.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/loader/SliderSkeleton.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/loader/SliderSkeleton.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/FeaturesController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/FeaturesController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/ProductService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/ProductService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/component/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Footer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/component/Products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Products.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/component/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Slider.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/details-page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/details-page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/home-page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/home-page.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +39,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/opt/homebrew/Cellar/php/8.2.5/bin/php" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -95,6 +95,7 @@
       <workItem from="1696771181571" duration="15231000" />
       <workItem from="1696835510602" duration="7000" />
       <workItem from="1696840856973" duration="12601000" />
+      <workItem from="1696942273286" duration="1743000" />
     </task>
     <servers />
   </component>

@@ -20,7 +20,7 @@ const Slider = () => {
                     {
                         data.map((item,i)=>{
                             return(
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to={i} className="active" aria-current="true" aria-label={"Slide "+ i}></button>
+                                <button key={i} type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to={i} className="active" aria-current="true" aria-label={"Slide "+ i}></button>
                             )
                         })
                     }
@@ -33,7 +33,7 @@ const Slider = () => {
                                     active="carousel-item active"
                                 }
                                 return(
-                                    <div className={active} data-bs-interval="10000">
+                                    <div key={i} className={active} data-bs-interval="10000">
                                         <div className="container">
                                             <div className="row justify-content-center">
                                                 <div className="col-12 col-lg-5 col-sm-12 col-md-5 p-5">
