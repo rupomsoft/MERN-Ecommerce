@@ -138,6 +138,10 @@ export  async function CreateCartListRequest(reqBody) {
     }
 }
 
+
+
+
+
 export  async function WishListRequest() {
     try {
         let URL=BASEURL+'/api/v1/WishList';
@@ -150,6 +154,11 @@ export  async function WishListRequest() {
         return [];
     }
 }
+
+
+
+
+
 
 export  async function RemoveWishListRequest(productID) {
     try {
@@ -217,7 +226,19 @@ export  async function ListByCategoryRequest(CategoryID) {
         return data['data'];
     }
     catch (e) {
-        unauthorized(e.response.status);
+        return [];
+    }
+}
+
+
+export  async function ListByBrandRequest(BrandID) {
+    try {
+        let URL=BASEURL+'/api/v1/ListByBrand/'+BrandID;
+        let result=await axios.get(URL);
+        let data=result.data;
+        return data['data'];
+    }
+    catch (e) {
         return [];
     }
 }
@@ -231,7 +252,22 @@ export  async function ListByKeywordRequest(Keyword) {
         return data['data'];
     }
     catch (e) {
-        unauthorized(e.response.status);
         return [];
     }
 }
+
+
+
+export  async function UserLogout() {
+    try {
+        let URL=BASEURL+'/api/v1/UserLogout';
+        let result=await axios.get(URL);
+        if(result.data['status']==="success")
+        return true
+    }
+    catch (e) {
+        unauthorized(e.response.status);
+        return false
+    }
+}
+

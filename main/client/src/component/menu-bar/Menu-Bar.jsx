@@ -1,7 +1,38 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from "../../assets/images/plainb-logo.svg"
 import {Link} from "react-router-dom";
+import toast, { Toaster } from 'react-hot-toast';
+import {useNavigate} from "react-router-dom"
+import {Button} from "react-bootstrap";
+import SubmitButton from "../SubmitButton.jsx";
+import {UserLogout} from "../../apiRequest/ApiRequest.js";
+
 const MenuBar = () => {
+
+    const [keyword,setKeyword]=useState("");
+    const [logoutLoader,setLogoutLoader]=useState(false);
+    const navigate = useNavigate();
+
+    const onSearch = () => {
+      if(keyword.length===0){
+          toast.error("Search Keyword Required!");
+      }
+      else{
+          navigate("/product-by-search/"+keyword)
+      }
+    }
+
+
+    const Logout = async () => {
+        setLogoutLoader(true)
+        sessionStorage.clear();
+        localStorage.clear();
+        await UserLogout()
+        setLogoutLoader(false);
+        window.location.href="/"
+    }
+
+
     return (
         <>
             <nav className="navbar shadow-sm sticky-top bg-white navbar-expand-lg navbar-light py-3">
@@ -20,8 +51,8 @@ const MenuBar = () => {
                     </div>
                     <div className=" d-lg-flex" action="">
                         <div className="input-group">
-                            <input className="form-control" type="search" placeholder="Search" aria-label="Search"/>
-                                <button className="btn btn-outline-dark" type="submit">
+                            <input onChange={(e)=>setKeyword(e.target.value)} className="form-control" type="search" placeholder="Search" aria-label="Search"/>
+                                <button onClick={onSearch} className="btn btn-outline-dark" type="submit">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style={{ width: 24, height: 24 }}>
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                                     </svg>
@@ -33,13 +64,28 @@ const MenuBar = () => {
                         <Link to="/wish" type="button" className="btn ms-3 btn-dark d-flex">
                             <i className="bi bi-heart"></i>
                         </Link>
-                        <Link
-                            type="button" className="btn ms-3 btn-success d-flex" to="/login">
-                           Login
-                        </Link>
+                        {
+                            (()=>{
+                                if(localStorage.getItem('login')==="1"){
+                                    return (
+                                        <>
+                                            <Link type="button" className="btn ms-3 btn-success d-flex" to="/profile">Profile</Link>
+                                            <SubmitButton submit={logoutLoader} text="Logout" onClick={Logout} type="button" className="btn ms-3 btn-success d-flex"/>
+                                        </>
+
+                                    )
+                                }
+                                else{
+                                    return (
+                                        <Link type="button" className="btn ms-3 btn-success d-flex" to="/login">Login</Link>
+                                    )
+                                }
+                            })()
+                        }
                     </div>
                 </div>
             </nav>
+            <Toaster position={"bottom-center"} />
         </>
     );
 };

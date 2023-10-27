@@ -1,8 +1,6 @@
 import React from 'react';
 import Master from "../component/Master.jsx";
 import Details from "../component/Details.jsx";
-
-
 const DetailsPage = () => {
     return (
         <Master>
@@ -10,5 +8,4 @@ const DetailsPage = () => {
         </Master>
     );
 };
-
 export default DetailsPage;

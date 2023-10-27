@@ -20,7 +20,15 @@ const Verify = () => {
             SetBtnLoader(false)
             if(res['status']==="success"){
                 toast.success(res['message']);
-                window.location.href=sessionStorage.getItem('lastLocation')
+                localStorage.setItem('login','1');
+
+                if(sessionStorage.getItem('lastLocation')!==null){
+                    window.location.href=sessionStorage.getItem('lastLocation')
+                }
+                else{
+                    window.location.href="/"
+                }
+
             }
             else{
                 toast.error(res['message']);
