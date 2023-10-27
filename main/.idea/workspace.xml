@@ -6,20 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ddc628d6-6746-4416-9032-edc63da21e55" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/apiRequest/ApiRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/apiRequest/ApiRequest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/Brands.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Brands.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/CartList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/CartList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/Categories.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Categories.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/ProductList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/ProductList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Slider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/Verify.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Verify.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/menu-bar/Menu-Bar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/menu-bar/Menu-Bar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/details-page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/details-page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/product-by-brand.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/product-by-brand.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/product-by-category.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/product-by-category.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/product-by-search.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/product-by-search.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/UserController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/UserController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +91,7 @@
       <workItem from="1697113973306" duration="641000" />
       <workItem from="1697206657214" duration="2000" />
       <workItem from="1698402846267" duration="14316000" />
-      <workItem from="1698418120885" duration="6748000" />
+      <workItem from="1698418120885" duration="7300000" />
     </task>
     <servers />
   </component>
