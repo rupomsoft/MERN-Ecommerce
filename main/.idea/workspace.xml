@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ddc628d6-6746-4416-9032-edc63da21e55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/component/ScrollToTop.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/component/loader/ProductsSkeleton.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/Brands.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Brands.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/Categories.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Categories.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/Features.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Features.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/Products.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Products.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/Slider.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Slider.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/details-page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/details-page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/home-page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/home-page.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +85,8 @@
       <workItem from="1696835510602" duration="7000" />
       <workItem from="1696840856973" duration="12601000" />
       <workItem from="1696942273286" duration="1743000" />
+      <workItem from="1697113973306" duration="641000" />
+      <workItem from="1697206657214" duration="2000" />
     </task>
     <servers />
   </component>
