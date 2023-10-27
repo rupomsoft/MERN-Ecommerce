@@ -4,38 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ddc628d6-6746-4416-9032-edc63da21e55" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/client/src/component/CartList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/component/ProductList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/component/ProfileDetails.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/component/SubmitButton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/component/WishList.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/component/loader/CartListSkeleton.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/cart-page.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/product-by-brand.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/product-by-category.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/product-by-search.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/profile.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/wish-page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/OrderList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/apiRequest/ApiRequest.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/apiRequest/ApiRequest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/Details.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Details.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/ScrollToTop.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/Verify.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/Verify.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/menu-bar/Menu-Bar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/component/menu-bar/Menu-Bar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/component/menu-bar/menuBarStore.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/details-page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/details-page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/home-page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/home-page.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/InvoiceController.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/InvoiceController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utility/TokenHelper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utility/TokenHelper.js" afterDir="false" />
-    </list>
+    <list default="true" id="ddc628d6-6746-4416-9032-edc63da21e55" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -119,7 +88,7 @@
       <workItem from="1696942273286" duration="1743000" />
       <workItem from="1697113973306" duration="641000" />
       <workItem from="1697206657214" duration="2000" />
-      <workItem from="1698402846267" duration="14071000" />
+      <workItem from="1698402846267" duration="14316000" />
     </task>
     <servers />
   </component>
