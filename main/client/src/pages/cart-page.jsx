@@ -1,14 +1,13 @@
 import React from 'react';
 import Master from "../component/Master.jsx";
-import Details from "../component/Details.jsx";
+import CartList from "../component/CartList.jsx";
 
-
-const DetailsPage = () => {
+const CartPage = () => {
     return (
         <Master>
-            <Details/>
+            <CartList/>
         </Master>
     );
 };
 
-export default DetailsPage;
+export default CartPage;

@@ -1,8 +1,6 @@
 import axios from "axios";
 import unauthorized from "../utility/unauthorized.js";
 
-
-
 let BASEURL="";
 
 export  async function BrandListRequest() {
@@ -16,7 +14,6 @@ export  async function BrandListRequest() {
     }
 }
 
-
 export  async function FeaturesListRequest() {
     try {
         let result=await axios.get(BASEURL+'/api/v1/FeatureList');
@@ -27,7 +24,6 @@ export  async function FeaturesListRequest() {
         return [];
     }
 }
-
 
 export  async function CategoryListRequest() {
     try {
@@ -40,7 +36,6 @@ export  async function CategoryListRequest() {
     }
 }
 
-
 export  async function ProductListByRemarkRequest(Remark) {
     try {
         let result=await axios.get(BASEURL+'/api/v1/ListByRemark/'+Remark);
@@ -51,7 +46,6 @@ export  async function ProductListByRemarkRequest(Remark) {
         return [];
     }
 }
-
 
 export  async function SliderListRequest() {
     try {
@@ -86,6 +80,33 @@ export  async function ListBySmilierRequest(categoryID) {
     }
 }
 
+export  async function UserLoginRequest(email) {
+    try {
+
+        let URL=BASEURL+'/api/v1/UserLogin/'+email;
+        let result=await axios.get(URL);
+        let data=result.data
+
+        return data;
+    }
+    catch (e) {
+        return false
+    }
+}
+
+export  async function VerifyLoginRequest(email,code) {
+    try {
+
+        let URL=BASEURL+'/api/v1/VerifyLogin/'+email+"/"+code;
+        let result=await axios.get(URL);
+        let data=result.data
+
+        return data;
+    }
+    catch (e) {
+        return false
+    }
+}
 
 export  async function CreateWishListRequest(productID) {
     try {
@@ -102,7 +123,6 @@ export  async function CreateWishListRequest(productID) {
     }
 }
 
-
 export  async function CreateCartListRequest(reqBody) {
     try {
 
@@ -118,32 +138,100 @@ export  async function CreateCartListRequest(reqBody) {
     }
 }
 
-
-export  async function UserLoginRequest(email) {
+export  async function WishListRequest() {
     try {
-
-        let URL=BASEURL+'/api/v1/UserLogin/'+email;
+        let URL=BASEURL+'/api/v1/WishList';
         let result=await axios.get(URL);
-        let data=result.data
+        let data=result.data;
+        return data['data'];
+    }
+    catch (e) {
+        unauthorized(e.response.status);
+        return [];
+    }
+}
 
+export  async function RemoveWishListRequest(productID) {
+    try {
+        let URL=BASEURL+'/api/v1/RemoveWishList';
+        let result=await axios.post(URL,{productID:productID});
+        let data=result.data;
         return data;
     }
     catch (e) {
-        return false
+        unauthorized(e.response.status);
+        return [];
     }
 }
 
 
-export  async function VerifyLoginRequest(email,code) {
+
+export  async function CartListRequest() {
     try {
-
-        let URL=BASEURL+'/api/v1/VerifyLogin/'+email+"/"+code;
+        let URL=BASEURL+'/api/v1/CartList';
         let result=await axios.get(URL);
-        let data=result.data
+        let data=result.data;
+        return data['data'];
+    }
+    catch (e) {
+        unauthorized(e.response.status);
+        return [];
+    }
+}
 
+
+
+export  async function RemoveCartListRequest(productID) {
+    try {
+        let URL=BASEURL+'/api/v1/RemoveCartList';
+        let result=await axios.post(URL,{productID:productID});
+        let data=result.data;
         return data;
     }
     catch (e) {
-        return false
+        unauthorized(e.response.status);
+        return [];
+    }
+}
+
+
+export  async function InvoiceRequest() {
+    try {
+        let URL=BASEURL+'/api/v1/InvoiceCreate';
+        let result=await axios.get(URL);
+        let data=result.data;
+        return data['message']['desc'];
+    }
+    catch (e) {
+        unauthorized(e.response.status);
+        return [];
+    }
+}
+
+
+export  async function ListByCategoryRequest(CategoryID) {
+    try {
+        let URL=BASEURL+'/api/v1/ListByCategory/'+CategoryID;
+        let result=await axios.get(URL);
+        let data=result.data;
+        return data['data'];
+    }
+    catch (e) {
+        unauthorized(e.response.status);
+        return [];
+    }
+}
+
+
+export  async function ListByKeywordRequest(Keyword) {
+    try {
+        let URL=BASEURL+'/api/v1/ListByKeyword/'+Keyword;
+        let result=await axios.get(URL);
+        let data=result.data;
+        return data['data'];
+    }
+    catch (e) {
+        unauthorized(e.response.status);
+        return [];
     }
 }

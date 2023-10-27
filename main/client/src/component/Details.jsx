@@ -7,15 +7,19 @@ import ProductImages from "./details/ProductImages.jsx";
 import Specifications from "./details/Specifications.jsx";
 import Review from "./details/Review.jsx";
 import toast, {Toaster} from "react-hot-toast";
+import SubmitButton from "./SubmitButton.jsx";
+
 const Details = () => {
 
     let {id}=useParams()
-
     const [data,setData]=useState([]);
     const [images,setImages]=useState([])
     const [color,setColor]=useState([]);
     const [size,setSize]=useState([]);
     const [quantity, setQuantity] = useState(1);
+    const [cartBtnLoader, SetCartBtnLoader] = useState(false);
+    const [wishBtnLoader, SetWishBtnLoader] = useState(false);
+
 
     const [cartData, setCartData] = useState({productID:id, qty:1, color:"", size:""});
     
@@ -64,28 +68,32 @@ const Details = () => {
     };
 
     const AddCart = async () => {
+
         if (cartData['color'].length === 0) {
             toast.error("Color Required!")
         } else if (cartData['size'].length === 0) {
             toast.error("Size Required!")
         } else {
+            SetCartBtnLoader(true)
             let res = await CreateCartListRequest(cartData)
             if(res['status']==="success"){
                 toast.success(res['message'])
             }else{
                 toast.error(res['message'])
             }
+            SetCartBtnLoader(false)
         }
-
     }
 
     const AddWish =async () => {
+     SetWishBtnLoader(true)
      let res =await CreateWishListRequest(id);
      if(res['status']==="success"){
          toast.success(res['message'])
      }else{
          toast.error(res['message'])
      }
+     SetWishBtnLoader(false)
     }
 
     return (
@@ -144,10 +152,10 @@ const Details = () => {
                                 </div>
                             </div>
                             <div className="col-4  p-2">
-                                <button onClick={AddCart} className="btn w-100 btn-success">Add to Cart</button>
+                                <SubmitButton onClick={AddCart} className="btn w-100 btn-success" text="Add to Cart" submit={cartBtnLoader}/>
                             </div>
                             <div className="col-4  p-2">
-                                <button onClick={AddWish} className="btn w-100 btn-success">Add to Wish</button>
+                                <SubmitButton onClick={AddWish} className="btn w-100 btn-success" text="Add to Wish" submit={wishBtnLoader}/>
                             </div>
                         </div>
                     </div>

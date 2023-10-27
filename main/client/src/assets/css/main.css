@@ -48,6 +48,20 @@ body {
     font-size: 14px;
 }
 
+.product-img-sm{
+    width: 50px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.pay-img {
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+}
+.pay-img:hover {
+    -webkit-filter: brightness(0.8);
+    filter: brightness(0.8);
+}
 
 
 .spinner-wrapper {

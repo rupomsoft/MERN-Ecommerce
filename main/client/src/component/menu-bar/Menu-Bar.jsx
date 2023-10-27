@@ -6,19 +6,16 @@ const MenuBar = () => {
         <>
             <nav className="navbar shadow-sm sticky-top bg-white navbar-expand-lg navbar-light py-3">
                 <div className="container">
-                    <a className="navbar-brand" href="#">
+                    <Link className="navbar-brand" to="/">
                         <img className="img-fluid" src={logo} alt="" width="96px"/>
-                    </a>
+                    </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav06"
                             aria-controls="nav06" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="nav06">
                         <ul className="navbar-nav mt-3 mt-lg-0 mb-3 mb-lg-0 ms-lg-3">
-                            <li className="nav-item me-4"><a className="nav-link" href="#">About</a></li>
-                            <li className="nav-item me-4"><a className="nav-link" href="#">Company</a></li>
-                            <li className="nav-item me-4"><a className="nav-link" href="#">Services</a></li>
-                            <li className="nav-item"><a className="nav-link" href="#">Testimonials</a></li>
+                            <span className="nav-item me-4"><Link className="nav-link" to="/">Home</Link></span>
                         </ul>
                     </div>
                     <div className=" d-lg-flex" action="">
@@ -30,13 +27,12 @@ const MenuBar = () => {
                                     </svg>
                                 </button>
                         </div>
-                        <button type="button" className="btn ms-3 btn-outline-success position-relative">
+                        <Link to="/cart" type="button" className="btn ms-3 btn-outline-success position-relative">
                             <i className="bi bi-bag"></i>
-                            <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">02</span>
-                        </button>
-                        <button type="button" className="btn ms-3 btn-dark d-flex">
+                        </Link>
+                        <Link to="/wish" type="button" className="btn ms-3 btn-dark d-flex">
                             <i className="bi bi-heart"></i>
-                        </button>
+                        </Link>
                         <Link
                             type="button" className="btn ms-3 btn-success d-flex" to="/login">
                            Login

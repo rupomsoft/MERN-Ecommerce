@@ -1,7 +1,7 @@
 const jwt = require('jsonwebtoken');
 
 exports.EncodeToken=(email,user_id)=> {
-   return  jwt.sign({email:email,id:user_id},"ABC123",{expiresIn:'1h'});
+   return  jwt.sign({email:email,id:user_id},"ABC123",{expiresIn:'24h'});
 }
 
 exports.DecodeToken=(token)=> {
