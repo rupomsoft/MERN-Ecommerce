@@ -12,6 +12,19 @@ const cookieParser = require('cookie-parser');
 const mongoose =require('mongoose');
 const path = require("path");
 
+<<<<<<< Updated upstream
+=======
+
+//let URL="mongodb://127.0.0.1:27017/ecom4?retryWrites=true&w=majority"
+/*
+mongoose.connect(URL).then((res)=>{
+    console.log("Database Connected")
+}).catch((err)=>{
+    console.log(err)
+})
+ */
+
+>>>>>>> Stashed changes
 let URL="mongodb+srv://<username>:<password>@cluster0.7uslu.mongodb.net/ecom4?retryWrites=true&w=majority";
 let option={user:'testuser7777',pass:"testuser7777",autoIndex:true};
 mongoose.connect(URL,option).then((res)=>{
@@ -19,6 +32,10 @@ mongoose.connect(URL,option).then((res)=>{
 }).catch((err)=>{
     console.log(err)
 })
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 
 
 app.use(cookieParser());
