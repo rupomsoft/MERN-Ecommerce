@@ -44,7 +44,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "javascript.nodejs.core.library.configured.version": "18.12.1",
-    "javascript.nodejs.core.library.typings.version": "18.18.7",
+    "javascript.nodejs.core.library.typings.version": "18.18.9",
     "last_opened_file_path": "C:/Users/EngrR/Documents/GitHub/MERN-Ecommerce/main/client/src/component/loader",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -91,7 +91,8 @@
       <workItem from="1697113973306" duration="641000" />
       <workItem from="1697206657214" duration="2000" />
       <workItem from="1698402846267" duration="14316000" />
-      <workItem from="1698418120885" duration="7300000" />
+      <workItem from="1698418120885" duration="7898000" />
+      <workItem from="1699593907406" duration="684000" />
     </task>
     <servers />
   </component>
