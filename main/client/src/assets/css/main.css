@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+:root {
+    /* Main Color */
+    --themeColor: #21bf73;
+    --themeColorDark: #39B27B;
+    --themeLightColor: #56d598;
+    --secondaryColor: #B0EACD;
+    --themeDarkColor: #2E374F;
+    --themeWhiteColor: #ffffff;
+
+    /* Greyscale Color */
+    --lightColor: #9EA3AE;
+    --lightDeepColor-1: #9EA3AE;
+    --lightDeepColor-2: #FAF8F6;
+    --lightDeepColor-3: #D3D5DA;
+    --lightDeepColor-4: #9EA3AE;
+    --darkColor: #6C727F;
+    --darkDeepColor-1: #4D5461;
+    --darkDeepColor-2: #394150;
+    --darkDeepColor-3: #212936;
+    --darkDeepColor-4: #0B0A0F;
+
+    /* Typography */
+    --headline-1: 52px;
+    --headline-2: 40px;
+    --headline-3: 32px;
+    --headline-4: 24px;
+    --bodyXLarge: 20px;
+    --bodyLarge: 18px;
+    --bodyMedium: 16px;
+    --bodySmal: 14px;
+    --bodyXSmal: 10px;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 14px;
+}
+
+.product-img-sm{
+    width: 50px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.pay-img {
+    -webkit-filter: brightness(1);
+    filter: brightness(1);
+}
+.pay-img:hover {
+    -webkit-filter: brightness(0.8);
+    filter: brightness(0.8);
+}
+
+
+.spinner-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.95); /* Semi white background */
+    z-index: 10000; /* Ensure spinner appears above all other elements */
+}
+
+
+
+.section{
+    margin-top: 80px !important;
+    margin-bottom: 40px !important;
+}
+
+.section-bottom{
+    margin-top: 80px !important;
+}
+
+.bg-light{
+    background-color: var(--lightDeepColor-2) !important;
+}
+
+.btn-success{
+    border-color: var(--themeColor)!important;
+    background-color: var(--themeColor);
+}
+
+.btn-outline-success{
+    border-color: var(--themeColor)!important;
+}
+
+.card{
+    border: none;
+}
+
+.headline-1 {
+    font-size: var(--headline-1);
+}
+.headline-2 {
+    font-size: var(--headline-2);
+}
+.headline-3 {
+    font-size: var(--headline-3);
+}
+.headline-4 {
+    font-size: var(--headline-4);
+}
+
+.bodyXLarge{
+    font-size: var(--bodyXLarge);
+}
+
+
+.bodyLarge{
+    font-size: var(--bodyLarge);
+}
+.bodyMedium{
+    font-size: var(--bodyMedium);
+}
+.bodySmal{
+    font-size: var(--bodySmal);
+}
+.bodyXSmal{
+    font-size: var(--bodyXSmal);
+}
+
+.hero-bg{
+
+    background: url("../images/hero-bg.svg");
+    background-size: cover;
+}
+
+
+.nav-pills > li > button.active {
+    background: var(--themeColor)!important;
+    color: var(--themeWhiteColor)!important;
+}
+.nav-pills > li > button {
+    color: var(--themeDarkColor)!important;
+}
+
+
+
+.col-xs-5-cols,
+.col-sm-5-cols,
+.col-md-5-cols,
+.col-lg-5-cols {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-5-cols {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+@media (min-width: 768px) {
+    .col-sm-5-cols {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-5-cols {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-5-cols {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+
+
+
+
+.col-xs-8r,
+.col-sm-8r,
+.col-md-8r,
+.col-lg-8r {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-8r {
+    width: 12.5%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-8r {
+        width: 12.5%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-8r {
+        width: 12.5%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-8r {
+        width: 12.5%;
+        float: left;
+    }
+}
