@@ -15,7 +15,7 @@ const CalculateInvoice = async (req)=>{
        let user_id=new ObjectId(req.headers.id);
        let cus_email=req.headers.email;
 
-
+       
        let data=await CartModel.aggregate([
             {$match: {userID:user_id}},
             {$group: {_id: 0, sum: {$sum: {$toDecimal: "$price"}}}}
