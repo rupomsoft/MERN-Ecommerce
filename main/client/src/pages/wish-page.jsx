@@ -1,11 +1,13 @@
 import React from 'react';
 import Master from "../component/Master.jsx";
-import Details from "../component/Details.jsx";
-const DetailsPage = () => {
+import WishList from "../component/WishList.jsx";
+
+const WishPage = () => {
     return (
         <Master>
-            <Details/>
+            <WishList/>
         </Master>
     );
 };
-export default DetailsPage;
+
+export default WishPage;

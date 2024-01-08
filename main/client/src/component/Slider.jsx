@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import {SliderListRequest} from "../apiRequest/ApiRequest.js";
 import SliderSkeleton from "./loader/SliderSkeleton.jsx";
+import {Link} from "react-router-dom";
 const Slider = () => {
     const [data,setData]=useState([])
     useEffect(()=>{
@@ -20,7 +21,7 @@ const Slider = () => {
                     {
                         data.map((item,i)=>{
                             return(
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to={i} className="active" aria-current="true" aria-label={"Slide "+ i}></button>
+                                <button key={i} type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to={i} className="active" aria-current="true" aria-label={"Slide "+ i}></button>
                             )
                         })
                     }
@@ -33,16 +34,16 @@ const Slider = () => {
                                     active="carousel-item active"
                                 }
                                 return(
-                                    <div className={active} data-bs-interval="10000">
+                                    <div key={i} className={active} data-bs-interval="10000">
                                         <div className="container">
                                             <div className="row justify-content-center">
                                                 <div className="col-12 col-lg-5 col-sm-12 col-md-5 p-5">
                                                     <h1 className="headline-1">{item['title']}</h1>
                                                     <p>{item['des']}</p>
-                                                    <button className="btn text-white btn-success px-5">Buy Now</button>
+                                                    <Link to={"/details/"+item['productID']} className="btn text-white btn-success px-5">Buy Now</Link>
                                                 </div>
                                                 <div className="col-12 col-lg-5 col-sm-12 col-md-5 p-5">
-                                                    <img src="https://photo.teamrabbil.com/images/2023/10/03/Apple.png" className="w-100" alt="..."/>
+                                                    <img src={item['image']} className="w-100" alt="..."/>
                                                 </div>
                                             </div>
                                         </div>

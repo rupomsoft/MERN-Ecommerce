@@ -9,20 +9,22 @@ const xss =require('xss-clean');
 const hpp =require('hpp');
 const cors =require('cors');
 const cookieParser = require('cookie-parser');
-
-
 const mongoose =require('mongoose');
+const path = require("path");
 
+<<<<<<< Updated upstream
+=======
+
+//let URL="mongodb://127.0.0.1:27017/ecom4?retryWrites=true&w=majority"
 /*
-let URL="mongodb://127.0.0.1:27017/ecom4?retryWrites=true&w=majority"
-
 mongoose.connect(URL).then((res)=>{
     console.log("Database Connected")
 }).catch((err)=>{
     console.log(err)
 })
-*/
+ */
 
+>>>>>>> Stashed changes
 let URL="mongodb+srv://<username>:<password>@cluster0.7uslu.mongodb.net/ecom4?retryWrites=true&w=majority";
 let option={user:'testuser7777',pass:"testuser7777",autoIndex:true};
 mongoose.connect(URL,option).then((res)=>{
@@ -30,7 +32,10 @@ mongoose.connect(URL,option).then((res)=>{
 }).catch((err)=>{
     console.log(err)
 })
+<<<<<<< Updated upstream
+=======
 
+>>>>>>> Stashed changes
 
 
 app.use(cookieParser());
@@ -51,8 +56,9 @@ app.use(limiter)
 app.use("/api/v1",router)
 
 
-app.use("*",(req,res)=>{
-    res.status(404).json({status:"fail",data:"Not Found"})
+// Add React Front End Routing
+app.get('*',function (req,res) {
+    res.sendFile(path.resolve(__dirname,'client','dist','index.html'))
 })
 
 module.exports=app;

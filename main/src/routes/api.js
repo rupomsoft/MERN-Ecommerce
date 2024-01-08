@@ -53,7 +53,11 @@ router.post('/RemoveCartList',AuthVerification,ProductController.RemoveCartList)
 
 
 // User
+router.get('/UserLogout',AuthVerification,UserController.UserLogout)
+
 router.get('/UserLogin/:email',UserController.UserLogin)
+
+
 router.get('/VerifyLogin/:email/:otp',UserController.VerifyLogin);
 
 
